@@ -1,3 +1,6 @@
+(* autor: Artur Matyjasek *)
+(* code review: Michał Borowski *)
+
 open PMap
 
 exception Cykliczne

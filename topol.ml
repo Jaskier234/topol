@@ -21,7 +21,7 @@ let topol l =
     | (a, list) :: t ->
       let update m x =
         let old = if mem x m then find x m else 0 in
-        add x (old+1) m
+        add x (old + 1) m
       in
       let n = if mem a map then map else add a 0 map in
       make_deg t (List.fold_left update n list)
